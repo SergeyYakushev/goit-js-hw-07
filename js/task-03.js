@@ -7,11 +7,13 @@ const listImgGallery = document.querySelector('#gallery');
 const makeImgMarkup = ({ url, alt }) => {
 
     return `
-    <li class ="item"><img src=${url} alt=${alt} width=300 ></li>
-    `;
+    <li class ="item"><img src=${url} alt="${alt}" width=300 ></li>
+     `;
 };
 
-const imgElementMarkup = images.map(makeImgMarkup);
+
+
+const imgElementMarkup = images.map(makeImgMarkup).join('');
 
 
 

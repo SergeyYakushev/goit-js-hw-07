@@ -8,16 +8,18 @@ refs.decrement.addEventListener('click', onBtnDecrement);
 refs.increment.addEventListener('click', onBtnIncrement);
 
 
+let counter = 0;
+
 function onBtnDecrement() {
 
-    const counter = Number(refs.count.textContent) - 1;
+    counter = counter - 1;
 
     refs.count.textContent = counter;
 };
 
 function onBtnIncrement() {
 
-    const counter = Number(refs.count.textContent) + 1;
+    counter = counter + 1;
 
     refs.count.textContent = counter;
 };
